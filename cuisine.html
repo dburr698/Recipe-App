@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/cuisine.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search By Cuisine</title>
+</head>
+
+<body>
+    <label for="dishIngredientSearch">Search recipes</label>
+    <input type="text" id="search" placeholder="Enter dishname or ingredients">
+    <button id="cuisineSubmitBtn">Submit</button>
+
+
+    <select name="cuisineType" id="cuisineType">
+        <option value="default" selected disabled hidden>Cuisine Type</option>
+        <option value="carribean">Caribbean</option>
+        <option value="chinese">Chinese</option>
+        <option value="french">French</option>
+        <option value="indian">Indian</option>
+        <option value="italian">Italian</option>
+        <option value="japanese">Japanese</option>
+        <option value="mediterranean">Mediterranean</option>
+        <option value=""></option>
+    </select>
+
+
+    <ul id="recipesUl"></ul>
+
+    <script src="/scripts/cuisine.js"></script>
+</body>
+
+</html>
