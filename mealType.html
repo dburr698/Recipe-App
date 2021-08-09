@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meal Type</title>
+    <link rel="stylesheet" href="styles/mealType.css">
+</head>
+
+<body>
+    <div class="userSearchInputs">
+        <label for="searchTextBox">Search Meals: </label>
+        <input name="searchTextBox" id="searchTextBox" placeholder="search">
+        <label for="mealType">Select Meal Type: </label>
+        <select name="mealType" id="mealTypeSelect">
+            <option value="default" selected disabled hidden>Meal Type</option>
+            <option value="maincourse">Main Course</option>
+            <option value="sidedish">Side Dish</option>
+            <option value="dessert">Dessert</option>
+            <option value="appetizer">Appetizer</option>
+            <option value="salad">Salad</option>
+            <option value="bread">Bread</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="soup">Soup</option>
+            <option value="beverage">Beverage</option>
+            <option value="sauce">Sause</option>
+            <option value="marinade">Marinade</option>
+            <option value="fingerfood">Finger Food</option>
+            <option value="snack">Snack</option>
+            <option value="drink">Drinks</option>
+        </select>
+        <button id="searchButton">Search</button>
+    </div>
+
+    <ul id="mealsUL">
+
+    </ul>
+
+    <script src="scripts/mealType.js"></script>
+</body>
+
+</html>
