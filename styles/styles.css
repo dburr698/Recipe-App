@@ -14,7 +14,7 @@ body{
     height: 250px;
     width: 250px;
     align-items: center;
-    margin-left: 575px;
+    margin: auto;
 }
 
 .d-flex{
@@ -29,18 +29,22 @@ padding-left: 5px;
 
 #carouselDiv{
     display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
 
-#carouselImg{
+.carousel-item{
     height: 400px;
-    width: 500px !important;
+    width: 100% !important;
+    margin: auto;
+    padding-top: 12px;
+    overflow: hidden;
 
 } 
 
-.carousel-inner img {
+.carousel-item img {
+    height: 700px;
+    width: 90%;
     margin: auto;
   }
 
@@ -63,7 +67,8 @@ padding-left: 5px;
 }
 
 #randomRecipeBtn{
-    border: solid goldenrod 3px;
+    border: solid goldenrod 3px !important;
+    padding: 5px !important;
 }
 
 .d-block{
@@ -73,6 +78,11 @@ padding-left: 5px;
 
 #carouselExampleFade img{
     height: 400px;
+}
+
+h1{
+    text-align: center;
+
 }
 
 

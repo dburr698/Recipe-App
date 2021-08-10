@@ -20,32 +20,29 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             <div id="iconBtnsDiv">
-                <a id="mealsLink" href=""><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/4.png" alt=""></a>
-                <a id="cuisinesLink" href=""><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/3.png" alt=""></a>
+                <a id="mealsLink" href="file:///Users/janelleshines/Desktop/Recipe-App/mealType.html"><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/4.png" alt=""></a>
+                <a id="cuisinesLink" href="file:///Users/janelleshines/Desktop/Recipe-App/cuisine.html"><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/3.png" alt=""></a>
                 <a id="dietsLink" href=""><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/BW%20Icons%20wtext.png" alt=""></a>
                 <a id="popularDishesLink" href=""><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/1.png" alt=""></a>
-                <a id="browseLink" href=""><img class="icons" src="file:///Users/janelleshines/Desktop/Recipe-App/images/BW%20Icons%20wtext/5.png" alt=""></a>
             </div> 
           </nav>
     </div>
+
+    <h1>Featured Recipes</h1>
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div id="carouselDiv" class="carousel-inner">
-            <h1>Popular Recipes</h1>
+        
+        
 
-          <div class="carousel-item active">
-            <img id="carouselImg" src="file:///Users/janelleshines/Desktop/Recipe-App/images/testImg1.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img id="carouselImg" src="file:///Users/janelleshines/Desktop/Recipe-App/images/testImg2.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img id="carouselImg" src="file:///Users/janelleshines/Desktop/Recipe-App/images/testImg3.jpeg" class="d-block w-100" alt="...">
-          </div>
+        <div id="carouselDiv" class="carousel-inner">
+            
+
+          
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,12 +56,19 @@
 
       <div id="randomRecipeDiv">
           <h1>Not Sure What To Cook?</h1>
-          <h4>Click Here For a Random Recipe!</h4>
+          <h4>Click Here For a Popular Recipe!</h4>
 
-          <button type="button" class="btn btn-dark" id="randomReciipeBtn">Recipe Generator</button>
+          <button type="button" class="btn btn-dark" id="randomRecipeBtn">Recipe Generator</button>
+
+          <div id="randomRecipe">
+            
+            <a href=""><img src="${}" alt=""></a>
+          </div>
       </div>
 
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
+
