@@ -44,7 +44,7 @@ function displayRecipes(recipesToDisplay) {
     const recipeItems = recipesToDisplay.results.map(function(recipe) {
         return `<li>
                     <img src="${recipe.image}"/>
-                    <h3>${recipe.title}</h3>
+                    <h3 onClick = displayRecipies>${recipe.title}</h3>
                 </li>`
     }) 
     recipesUl.innerHTML = recipeItems.join("")
