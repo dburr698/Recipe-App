@@ -41,9 +41,7 @@ getPopularRecipe(function(recipes) {
 
 
 randomRecipeBtn.addEventListener(click, function(){
-getPopularRecipe(recipes){
-    
-}
+getPopularRecipe(recipes)
 })
 
 
