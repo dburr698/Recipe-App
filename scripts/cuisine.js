@@ -9,7 +9,7 @@ function getSearchedRecipes(cuisinesDownloaded) {
     const cuisine = `cuisine=${dropDown.value}` 
     const search = `query=${searchBox.value}`
 
-    const cuisineURL =`https://api.spoonacular.com/recipes/complexSearch?apiKey=9378714895904dd88157b062a0cff48a&${cuisine}&${search}&number=50&sort=random`
+    const cuisineURL =`https://api.spoonacular.com/recipes/complexSearch?apiKey=e720edf96b814001bf66d1f2b8191f1a&${cuisine}&${search}&number=50&sort=random`
 
     console.log(cuisineURL)
     fetch(cuisineURL)
@@ -25,7 +25,7 @@ function getSearchedRecipes(cuisinesDownloaded) {
 
 function getAllRecipies(recipiesDownloaded) {
 
-    const recipiesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=9378714895904dd88157b062a0cff48a&query=&cuisine=&diet=&number=50&sort=random"
+    const recipiesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=e720edf96b814001bf66d1f2b8191f1a"
 
     fetch(recipiesURL)
     .then(function(response) {
@@ -43,8 +43,8 @@ function displayRecipes(recipesToDisplay) {
 
     const recipeItems = recipesToDisplay.results.map(function(recipe) {
         return `<li>
-                    <img src="${recipe.image}"/>
-                    <h3 onClick = displayRecipies>${recipe.title}</h3>
+                    <img id = "recipeImage" src="${recipe.image}"/>
+                    <h3>${recipe.title}</h3>
                 </li>`
     }) 
     recipesUl.innerHTML = recipeItems.join("")
