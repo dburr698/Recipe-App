@@ -33,12 +33,12 @@ function displayIngredients(ingredients) {
 
 function displayRecipeInfo(details) {
     let recipeDisplay =
-        `<h1>${details.title}</h1>
-    <h3>Servings: ${details.servings}</h3>
-    <h3>Total Cook Time: ${details.readyInMinutes} minutes</h3>
-    <div><img src="${details.image}"/></div>
-    <h3>Ingredients:</h3>
-    <ul>${displayIngredients(details.extendedIngredients)}</ul>
+        `<h1 id="title">${details.title}</h1>
+    <div id="servTime"><h2 id="servings">Servings: ${details.servings}</h2>
+    <h2 id="cookTime">Total Cook Time: ${details.readyInMinutes} minutes</h2></div>
+    <div id="picIngredients"><img id="picture" src="${details.image}"/>
+    <div id="ingredients"><h3>Ingredients:</h3>
+    <ul>${displayIngredients(details.extendedIngredients)}</ul></div></div>
     <p>${details.instructions}</p>
 
      `
