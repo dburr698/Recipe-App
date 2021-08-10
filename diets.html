@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diets</title>
+</head>
+<body>
+    <div id="userSearchInputs">
+        <label for="searchTextBox">Search Meals: </label>
+        <input name="searchTextBox" id="searchTextBox" placeholder="search">
+        <label for="dietType">Select Diet: </label>
+        <select name="dietType" id="dietTypeSelect">
+            <option value="default" selected disabled hidden>Diet</option>
+            <option value="glutenfree">Gluten Free</option>
+            <option value="ketogenic">Ketogenic</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="lacto-vegetarian">Lacto-Vegetarian</option>
+            <option value="ovo-vegetarian">Ovo-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="pescetarian">Pescetarian</option>
+            <option value="paleo">Paleo</option>
+            <option value="primal">Primal</option>
+            <option value="whole30">Whole30</option>
+        </select>
+        <button id="searchButton">Search</button>
+    </div>
+
+    <ul id="recipesUL">
+
+    </ul>
+
+    <script src="scripts/diets.js"></script>
+</body>
+</html>
