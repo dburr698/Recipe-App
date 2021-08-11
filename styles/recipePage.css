@@ -7,21 +7,39 @@
 }
 
 #title {
-    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 3.25em;
 }
 
 #servTime {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    border-top: solid goldenrod 1px;
+    border-bottom: solid goldenrod 1px;
 }
 
+#cookTime {
+    border-left: solid goldenrod 1px;
+    padding-right: 45px;
+   padding-left: 28px;
+   
+}
+
+.info {
+    font-size: 1.25em;
+}
 #servings {
-    margin-right: 30px;
+    padding-right: 28px;
+    padding-left: 45px;
 }
 
 #picture {
-    height: 600px;
+    height: 500px;
+    border-style: groove;
+    border: solid darkgoldenrod  5px;
+    padding-left: 30px;
 }
 
 #picIngredients {
@@ -32,5 +50,113 @@
 #ingredients {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+#ingred {
+    font-size: 1.75em;
+}
+
+#instructions {
+    margin-top: 20px;
+    font-size: 1.2em;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#list {
+
+    font-size: 1.25em;
+    list-style-type: circle;
+}
+
+
+/* -------------home page css-------------- */
+
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#search_row{
+    display: flex;
+    border: solid goldenrod 3px;
+}
+
+#logoImg{
+    padding: 15px;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    margin: auto;
+}
+
+/* .d-flex{
+    margin-right: 2px;
+
+} */
+
+.navbar {
+width: -webkit-fill-available;
+padding-left: 5px;
+}
+
+/* #carouselDiv{
+    display: flex;
+    text-align: center;
+} */
+
+
+/* .carousel-item{
+    height: 400px;
+    width: 100% !important;
+    margin: auto;
+    padding-top: 12px;
+    overflow: hidden;
+
+}  */
+
+/* .carousel-item img {
+    height: 700px;
+    width: 90%;
+    margin: auto;
+  } */
+
+/* #randomRecipeDiv{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+#iconBtnsDiv{
+    display: flex;
+}
+
+.icons{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* #randomRecipeBtn{
+    border: solid goldenrod 3px !important;
+    padding: 5px !important;
+} */
+
+/* .d-block{
+    height: 600px !important;
+    object-fit: cover;
+} */
+
+/* #carouselExampleFade img{
+    height: 400px;
+} */
+
+h1{
+    text-align: center;
+
 }
