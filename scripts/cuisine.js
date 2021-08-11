@@ -72,5 +72,6 @@ getAllRecipies(function(recipies) {
     
 })
 
-
+document.querySelector(".navbar-toggler").addEventListener("click", function(e){ 
+    document.querySelector("#SpartanNavbar").classList.toggle("show"); }); 
 
