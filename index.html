@@ -1,74 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Bootstrap CSS --> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Recipe-App Home</title>
-  </head>
-  <body>
-    
-    <img id="logoImg" src="/images/ReciPedia.png" alt="">
 
-    <div id="search_row">       
-        <nav class="navbar navbar-dark bg-dark">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            <div id="iconBtnsDiv">
-                <a id="mealsLink" href="/mealType.html"><img class="icons" src="/images/BW%20Icons%20wtext/4.png" alt=""></a>
-                <a id="cuisinesLink" href="/cuisine.html"><img class="icons" src="/images/BW%20Icons%20wtext/3.png" alt=""></a>
-                <a id="dietsLink" href=""><img class="icons" src="/images/BW%20Icons%20wtext/BW%20Icons%20wtext.png" alt=""></a>
-                <a id="popularDishesLink" href=""><img class="icons" src="/images/BW%20Icons%20wtext/1.png" alt=""></a>
-            </div> 
-          </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Recipe-App Home</title>
+</head>
+
+<body>
+
+  <a id="logoImgLink" href="./index.html"><img id="logoImg" src="./images/ReciPedia.png" alt=""></a>
+
+  <div id="search_row">
+    <nav class="navbar navbar-dark bg-dark">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div id="iconBtnsDiv">
+        <a id="mealsLink" href="./mealType.html"><img class="icons" src="./images/BW%20Icons%20wtext/4.png" alt=""></a>
+        <a id="cuisinesLink" href="./cuisine.html"><img class="icons" src="./images/BW%20Icons%20wtext/3.png" alt=""></a>
+        <a id="dietsLink" href="./diets.html"><img class="icons" src="./images/2.png" alt=""></a>
+        <a id="popularDishesLink" href=""><img class="icons" src="./images/BW%20Icons%20wtext/1.png" alt=""></a>
+      </div>
+    </nav>
+  </div>
+
+  <h1>Featured Recipes</h1>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
 
-    <h1>Featured Recipes</h1>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        
-        
 
-        <div id="carouselDiv" class="carousel-inner">
-            
+    <div id="carouselDiv" class="carousel-inner">
 
-          
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <div id="randomRecipeDiv">
-          <h1>Not Sure What To Cook?</h1>
-          <h4>Click Here For a Popular Recipe!</h4>
 
-          <button type="button" class="btn btn-dark" id="randomRecipeBtn">Recipe Generator</button>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-          <div id="randomRecipeDiv">
-            
-            <a href=""><img src="${}" alt=""></a>
-          </div>
-      </div>
+  <div id="randomRecipeDiv">
+    <h1>Not Sure What To Cook?</h1>
+    <h4>Click Here For a Popular Recipe!</h4>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-  </body>
+    <button type="button" class="btn btn-dark" id="randomRecipeBtn">Recipe Generator</button>
+
+    <div id="randomRecipeDivDisplay">
+
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
-
