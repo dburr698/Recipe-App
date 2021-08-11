@@ -37,7 +37,7 @@ function getAllRecipies(showMeals) {
 function displayMeals(meals) {
     const mealItems = meals.map(function (dish) {
         return `<li>
-        <img src=${dish.image}>
+        <img id = "recipeImage" src=${dish.image}>
         <h3>${dish.title}</h3>
     </li>`
     })

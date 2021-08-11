@@ -4,10 +4,10 @@ body{
 
 }
 
-#search{
+#searchTextBox{
     display: flex;
     border: solid goldenrod 3px;
-    width: 400px;
+    width: 250px px;
 
     
 }
@@ -20,24 +20,25 @@ body{
     margin-left: 575px;
 }
 
-#recipesUl {
+#mealsUL {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    list-style: none;
 
     
 }
 h3 {
     color:black;
 }
-#cuisineType {
+#mealTypeSelect {
     display: flex;
     border: solid goldenrod 3px;
-    width: 350px;
+    width: 150px;
 
 }
-#cuisineSubmitBtn {
+#searchButton {
     display: flex;
     border: solid goldenrod 3px;
     width: 150px;
@@ -62,4 +63,12 @@ li {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#recipeImage {
+    height: 45%;
+    width: 45%;
+    border:darkgoldenrod; 
+    border-style:groove ;
+    border-width: 5px;
 }
