@@ -22,29 +22,39 @@ function getRandomRecipe() {
         })
 }
 
-function displayPopRecipeImage(popularRecipeDownloaded) {
-    console.log(popularRecipeDownloaded)
-    
 
-    const recipeImages = popularRecipeDownloaded.map(function (recipeImage, index) {
-        return `<div class="carousel-item ${index == 0 ? "active" : ""}">           
+function routeToRecipePage(recipeId) {
+    window.location.href="recipePage.html"+`?id=${recipeId}`
+}
+
+function displayPopRecipeImage(popularRecipeDownloaded){
+    console.log(popularRecipeDownloaded)
+
+   
+    const recipeImages = popularRecipeDownloaded.map(function(recipeImage, index){
+        return `<div onClick= routeToRecipePage(${recipeImage.id}) class="carousel-item ${index == 0 ? "active": ""}">           
+
                 <img src = "${recipeImage.image}" />
                 </div>
        `
     })
 
+  
+
     carouselDiv.innerHTML = recipeImages.join("")
 }
+
 
 function displayRandomRecipeImage(popularRecipeDownloaded) {
     console.log(popularRecipeDownloaded)
 
-    const recipeImages = popularRecipeDownloaded.results.map(function (recipeImage) {
-        return `<div id="randomRecipe">
-                    
-                    <a href=""><img src="${recipeImage.image}" alt=""></a>
-                    <a href=""><h3>${recipeImage.title}</h3></a>
-                </div>`
+
+    const recipeImages = popularRecipeDownloaded.map(function(recipeImage){
+        return `<div onClick= routeToRecipePage(${recipeImage.id}id="randomRecipe">
+        <a href=""><img src="${recipeImage.image}" alt=""></a>
+        <a href=""><h3>${recipeImage.title}</h3></a>
+       </div>`
+
     })
 
     randomRecipeDivDisplay.innerHTML = recipeImages.join("")
