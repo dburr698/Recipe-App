@@ -213,41 +213,14 @@ h1{
      /* } */
 }
 
-@media only screen and (min-width: 600px) {
-  
-    #picIngredients {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #picture { 
-        height: 375px;
-    }
 
-    #listIngredients {
-        font-size: 1em;
-    }
-
-    #servings {
-        display: flex;
-        font-size: 1.3em;
-        align-items: center;
-    }    
-
-    #cookTime {
-        display: flex;
-        font-size: 1.3em;
-        align-items: center;
-    }    
-    }
     
 
-}
+
 @media only screen and (min-width: 768px) {
     #picIngredients {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+      
     }
     #picture { 
         height: 400px;
@@ -257,5 +230,8 @@ h1{
 }
 
 @media only screen and (min-width: 1200px) {
-
+    #picIngredients {
+        display: flex;
+      
+    }
 }
