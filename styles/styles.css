@@ -4,6 +4,10 @@ body{
 
 }
 
+#logoImgLink{
+    margin: auto;
+}
+
 #search_row{
     display: flex;
     border: solid goldenrod 3px;
@@ -69,6 +73,7 @@ padding-left: 5px;
 #randomRecipeBtn{
     border: solid goldenrod 3px !important;
     padding: 5px !important;
+    margin-bottom: 5px !important;
 }
 
 .d-block{
