@@ -84,6 +84,14 @@ h1{
     text-align: center;
 
 }
+#recipeImage {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 

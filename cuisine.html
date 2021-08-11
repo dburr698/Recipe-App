@@ -6,31 +6,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/search-style.css">
     <title>Search By Cuisine</title>
 </head>
 
 <body>
-    <label for="dishIngredientSearch">Search recipes</label>
-    <input type="text" id="search" placeholder="Enter dishname or ingredients">
-    
+    <img id="cuisineBanner" src="images/cuisinebanner.png">
+    <div id="search_row">
+        <nav class="navbar navbar-dark bg-dark">
+            <form class="d-flex">
+                <label for="dishIngredientSearch">Search recipes</label>
+                <input type="text" id="search" placeholder="Enter ingredients">
+            </form>
 
 
-    <select name="cuisineType" id="cuisineType">
-        <option value="default" selected disabled hidden>Cuisine Type</option>
-        <option value="carribean">Caribbean</option>
-        <option value="chinese">Chinese</option>
-        <option value="french">French</option>
-        <option value="indian">Indian</option>
-        <option value="italian">Italian</option>
-        <option value="japanese">Japanese</option>
-        <option value="mediterranean">Mediterranean</option>
-        <option value=""></option>
-    </select>
 
-    <button id="cuisineSubmitBtn">Submit</button>
+            <select name="cuisineType" id="cuisineType">
+                <option value="default" selected disabled hidden>Cuisine Type</option>
+                <option value="carribean">Caribbean</option>
+                <option value="chinese">Chinese</option>
+                <option value="french">French</option>
+                <option value="indian">Indian</option>
+                <option value="italian">Italian</option>
+                <option value="japanese">Japanese</option>
+                <option value="mediterranean">Mediterranean</option>
+                <option value=""></option>
+            </select>
 
+            <button id="cuisineSubmitBtn">Submit</button>
+            <div id="iconBtnsDiv">
+                <a id="mealsLink" href=""><img class="icons" src="images/BW Icons wtext/4.png" alt=""></a>
+                <a id="cuisinesLink" href=""><img class="icons" src="images/BW Icons wtext/3.png" alt=""></a>
+                <a id="dietsLink" href=""><img class="icons" src="images/BW Icons wtext/BW Icons wtext.png" alt=""></a>
+                <a id="popularDishesLink" href=""><img class="icons" src="images/BW Icons wtext/1.png" alt=""></a>
+            </div>
+        </nav>
+    </div>
     <ul id="recipesUl"></ul>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <script src="/scripts/cuisine.js"></script>
 </body>
 
