@@ -10,11 +10,16 @@ function getPopularRecipe(popularRecipeDownloaded){
     })
 }
 
+function routeToRecipePage(recipeId) {
+    window.location.href="recipePage.html"+`?id=${recipeId}`
+}
+
 function displayPopRecipeImage(popularRecipeDownloaded){
     console.log(popularRecipeDownloaded)
+
    
     const recipeImages = popularRecipeDownloaded.map(function(recipeImage, index){
-        return `<div class="carousel-item ${index == 0 ? "active": ""}">           
+        return `<div onClick= routeToRecipePage(${recipeImage.id}) class="carousel-item ${index == 0 ? "active": ""}">           
                 <img src = "${recipeImage.image}" />
                 </div>
        `

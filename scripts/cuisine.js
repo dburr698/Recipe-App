@@ -37,12 +37,15 @@ function getAllRecipies(recipiesDownloaded) {
     })
 }
 
+function routeToRecipePage(recipeId) {
+    window.location.href="recipePage.html"+`?id=${recipeId}`
+    
+}
 
 function displayRecipes(recipesToDisplay) {
-    //recipesUl.innerHTML = "" //clear out all recipies
-
+    
     const recipeItems = recipesToDisplay.results.map(function(recipe) {
-        return `<li>
+        return `<li onClick= routeToRecipePage(${recipe.id})>
                     <img id = "recipeImage" src="${recipe.image}"/>
                     <h3>${recipe.title}</h3>
                 </li>`

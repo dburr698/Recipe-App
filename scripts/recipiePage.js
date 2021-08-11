@@ -1,9 +1,13 @@
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+const id = urlParams.get("id")
+console.log(id)
 const divContainer = document.getElementById("recipeContainer")
 
 const apiKey = "e720edf96b814001bf66d1f2b8191f1a"
 
 function getRecipe(recipesDownloaded) {
-    const recipeURL = `https://api.spoonacular.com/recipes/651250/information?apiKey=${apiKey}`
+    const recipeURL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
 
     fetch(recipeURL)
         .then(function (response) {
