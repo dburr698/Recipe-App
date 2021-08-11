@@ -4,7 +4,7 @@ const id = urlParams.get("id")
 console.log(id)
 const divContainer = document.getElementById("recipeContainer")
 
-const apiKey = "e720edf96b814001bf66d1f2b8191f1a"
+const apiKey = "843765ca722c4b6fa53b40182c0bc5db"
 
 function getRecipe(recipesDownloaded) {
     const recipeURL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
@@ -28,7 +28,7 @@ function displayIngredients(ingredients) {
 
         return `
         <li>
-            <h4>${ingredient.original}</h4>
+            <h4 id="listIngredients">${ingredient.original}</h4>
         </li>`
     })
     return recipeIngredients.join("")

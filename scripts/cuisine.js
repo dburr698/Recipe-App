@@ -3,7 +3,7 @@ const searchBox = document.getElementById("search")
 const dropDown = document.getElementById("cuisineType")
 const cuisineSubmitBtn= document.getElementById("cuisineSubmitBtn")
 const recipesUl = document.getElementById("recipesUl")
-const apiKey = "e720edf96b814001bf66d1f2b8191f1a"
+const apiKey = "843765ca722c4b6fa53b40182c0bc5db"
 
 function getSearchedRecipes(cuisinesDownloaded) {
     const cuisine = `cuisine=${dropDown.value}` 

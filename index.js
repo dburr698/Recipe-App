@@ -25,12 +25,16 @@ function displayPopRecipeImage(popularRecipeDownloaded){
        `
     }) 
 
+function routeToRecipePage(recipeId) {
+        window.location.href="recipePage.html"+`?id=${recipeId}`
+        
+    }   
 
 function displayRandomRecipeImage(popularRecipeDownloaded){
     console.log(popularRecipeDownloaded)
 
     const recipeImages = popularRecipeDownloaded.map(function(recipeImage){
-        return `<div id="randomRecipe">
+        return `<div onClick= routeToRecipePage(${recipeImage.id}id="randomRecipe">
         <a href=""><h3>${recipeImage.title}</h3></a>
         <a href=""><img src="${recipeImage.image}" alt=""></a>
       </div>`
