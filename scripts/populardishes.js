@@ -15,7 +15,7 @@ function getPopularDishes(showDishes) {
         })
 
 }
-function getAllRecipies(recipiesDownloaded) {
+function getAllRecipes(recipesDownloaded) {
 
     const recipesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=9378714895904dd88157b062a0cff48a"
     fetch(recipesURL)
@@ -28,7 +28,7 @@ function getAllRecipies(recipiesDownloaded) {
     })
 }
 
-// create a function to display the Poupular meals
+// create a function to display the Popular meals
 function displayDishes(Dishes) {
     const DishesItems = Dishes.results.map(function (dish) {
         return `<li>
