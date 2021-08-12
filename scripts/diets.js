@@ -40,7 +40,7 @@ function routeToRecipePage(recipeId) {
 // create a function to display the different meals
 function displayMeals(meals) {
     const mealItems = meals.map(function (dish) {
- recipe-page
+ 
         return `<li onClick= routeToRecipePage(${dish.id})>
         <img src=${dish.image}>
 

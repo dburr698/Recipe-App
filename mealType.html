@@ -25,32 +25,43 @@
                 <a id="popularDishesLink" href=""><img class="icons" src="images/BW Icons wtext/1.png" alt=""></a>
             </div>
             <form class="d-flex">
-                    <label for="dishIngredientSearch">Search Recipes:</label>
-                    <input type="searchTextBox" id="search" placeholder="Enter ingredients">
-                </form>
 
-                    <select name="mealType" id="mealTypeSelect">
-                        <option value="default" selected disabled hidden>Meal Type</option>
-                        <option value="maincourse">Main Course</option>
-                        <option value="sidedish">Side Dish</option>
-                        <option value="dessert">Dessert</option>
-                        <option value="appetizer">Appetizer</option>
-                        <option value="salad">Salad</option>
-                        <option value="bread">Bread</option>
-                        <option value="breakfast">Breakfast</option>
-                        <option value="soup">Soup</option>
-                        <option value="beverage">Beverage</option>
-                        <option value="sauce">Sause</option>
-                        <option value="marinade">Marinade</option>
-                        <option value="fingerfood">Finger Food</option>
-                        <option value="snack">Snack</option>
-                        <option value="drink">Drinks</option>
-                    </select>
-                    <button id="searchButton">Submit</button>
-                </div>
-        </div>
-    </div>
-    </nav>
+                <label for="searchTextBox">Search Meals: </label>
+                <input name="searchTextBox" id="searchTextBox" pattern="[a-zA-Z]" placeholder="search">
+                <label for="mealType"> </label>
+            </form>
+            <div class="userSearchInputs">
+
+                <select name="mealType" id="mealTypeSelect">
+                    <option value="" selected disabled hidden>Meal Type</option>
+                    <option value="maincourse">Main Course</option>
+                    <option value="sidedish">Side Dish</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="salad">Salad</option>
+                    <option value="bread">Bread</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="soup">Soup</option>
+                    <option value="beverage">Beverage</option>
+                    <option value="sauce">Sause</option>
+                    <option value="marinade">Marinade</option>
+                    <option value="fingerfood">Finger Food</option>
+                    <option value="snack">Snack</option>
+                    <option value="drink">Drinks</option>
+                </select>
+            </div>
+            <button id="searchButton">Submit</button>
+
+            <div id="iconBtnsDiv">
+                <a id="mealsLink" href="/mealType.html"><img class="icons" src="images/BW Icons wtext/4.png" alt=""></a>
+                <a id="cuisinesLink" href="cuisine.html"><img class="icons" src="images/BW Icons wtext/3.png"
+                        alt=""></a>
+                <a id="dietsLink" href="diets.html"><img class="icons" src="images/BW Icons wtext/BW Icons wtext.png"
+                        alt=""></a>
+                <a id="popularDishesLink" href=""><img class="icons" src="images/BW Icons wtext/1.png" alt=""></a>
+            </div>
+        </nav>
+
 
 
     <ul id="mealsUL">
