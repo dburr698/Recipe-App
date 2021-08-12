@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#logoImg{
+    padding: 15px;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    margin-left: 575px;
+}
+
+#dishesuL {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    
+
+    
+}
+ul#dishesUL {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+
+h3 {
+    color:black;
+}
+
+
+
+#submit {
+    display: flex;
+    border: solid goldenrod 3px;
+    width: 150px;
+
+}
+
+li {
+    list-style: none;
+    border-bottom: black;
+    border-bottom: solid;
+    padding: 20px;
+    font-family: monospace;
+    font-size: larger;
+   
+}
+#iconBtnsDiv{
+
+}
+
+.icons{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#recipeImage {
+    height: 45%;
+    width: 45%;
+    border:darkgoldenrod; 
+    border-style:groove ;
+    border-width: 5px;
+}
+
+
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse
+     {
+    display: flex!important;
+    justify-content: space-around;
+    flex-basis: auto;
+
+}
+
+}
