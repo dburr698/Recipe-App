@@ -25,7 +25,6 @@ function displayIngredients(ingredients) {
 
     const recipeIngredients = ingredients.map(function (ingredient) {
 
-
         return `
         <li>
             <h4 id="listIngredients">${ingredient.original}</h4>
@@ -38,24 +37,28 @@ function displayIngredients(ingredients) {
 function displayRecipeInfo(details) {
     let recipeDisplay =
         `<h1 class="row justify-content-center" id="title">${details.title}</h1>
-        <div class="row" id="servTime">
-            
-            <h2 class="col  border-end border-warning text-center"id="servings">Servings: 
-                <span class="info">${details.servings}</span>
+        <div class="row justify-content-evenly" id="servTime">
+            <h2 class="subTitle col-lg-6 col-sm-12   text-center"id="servings">Servings: 
+                <span class="info">  ${details.servings}</span>
             </h2>
-            <h2 class="col  border-end border-warning text-center"id="cookTime">Total Cook Time: 
+            
+            <h2 class="subTitle col-lg-6 col-md-12 col-sm-6 text-center "id="cookTime">Total Cook Time: 
                 <span class="info"> ${details.readyInMinutes} minutes </span>
             <h2>
+
             
         </div>
         <div class="row" id="picIngredients">
-            <img class=" col-md-8 img-fluid justify-content-center" id="picture" src=" ${details.image}"/>
-            <div class="col" id="ingredients">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <img class="img-fluid" id="picture" src=" ${details.image}">
+            </div>
+            <div class="col-lg-4" id="ingredients">
                 <h3 id="ingred">Ingredients:</h3>
                 <ul id="list">${displayIngredients(details.extendedIngredients)}</ul>
             </div>
         </div>
-        <div id="instructions">${details.instructions}</div>
+        <h3 id="directions">Directions:</h3>
+        <div class="ms-4"id="instructions">${details.instructions}</div>
 
      `
 
