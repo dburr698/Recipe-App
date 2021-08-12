@@ -4,14 +4,6 @@ body{
 
 }
 
-#search{
-    display: flex;
-    border: solid goldenrod 3px;
-    width: 250px px;
-
-    
-}
-
 #logoImg{
     padding: 15px;
     height: 250px;
@@ -20,14 +12,23 @@ body{
     margin-left: 575px;
 }
 
-#dishesUl {
+#dishesuL {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    
 
     
 }
+ul#dishesUL {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+
 h3 {
     color:black;
 }
@@ -51,7 +52,7 @@ li {
    
 }
 #iconBtnsDiv{
-    display: flex;
+
 }
 
 .icons{
@@ -67,4 +68,16 @@ li {
     border:darkgoldenrod; 
     border-style:groove ;
     border-width: 5px;
+}
+
+
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse
+     {
+    display: flex!important;
+    justify-content: space-around;
+    flex-basis: auto;
+
+}
+
 }

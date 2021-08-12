@@ -1,10 +1,10 @@
-const searchButton = document.getElementById("searchButton")
-const searchTextBox = document.getElementById("searchTextBox")
+// const searchButton = document.getElementById("searchButton")
+// const searchTextBox = document.getElementById("searchTextBox")
 const dishTypeSelect = document.getElementById("dishTypeSelect")
 
 
-function getPopularDishes(showDishes) {
-    const mealsUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=9378714895904dd88157b062a0cff48a&query=&number=3&sort=popularity'
+function getPopularRecipes(showDishes) {
+    const mealsUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=837cf79576fa443db6126e8ce01e0c58&query=&number=3&sort=popularity'
     fetch(mealsUrl)
         .then(response => {
             return response.json()
@@ -17,7 +17,7 @@ function getPopularDishes(showDishes) {
 }
 function getAllRecipes(recipesDownloaded) {
 
-    const recipesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=9378714895904dd88157b062a0cff48a"
+    const recipesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=837cf79576fa443db6126e8ce01e0c58"
     fetch(recipesURL)
     .then(function(response) {
         return response.json()
@@ -27,28 +27,22 @@ function getAllRecipes(recipesDownloaded) {
         console.log(error)
     })
 }
+function routeToRecipePage(recipeId) {
+    window.location.href="recipePage.html"+`?id=${recipeId}`
+    
+}
 
 // create a function to display the Popular meals
 function displayDishes(Dishes) {
-    const DishesItems = Dishes.results.map(function (dish) {
+    console.log(Dishes)
+    const DishesItems = Dishes.map(function (dish) {
         return `<li>
         <img id = "recipeImage" src=${dish.image}>
         <h3>${dish.title}</h3>
     </li>`
     })
-    dishesUL.innerHTML = dishItems.join("")
+    dishesUL.innerHTML = DishesItems.join("")
 }
-
-
-searchButton.addEventListener('click', function () {
-    getDishTypes(dishes => {
-        displayDishes(dishes)
-    })
-
-    searchTextBox.value = ""
-    dishTypeSelect.value = "default"
-
-})
 
 getPopularRecipes(dishes => {
     displayDishes(dishes)
