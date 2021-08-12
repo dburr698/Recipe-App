@@ -25,7 +25,7 @@ function getSearchedRecipes(cuisinesDownloaded) {
 
 function getAllRecipies(recipiesDownloaded) {
 
-    const recipiesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=e720edf96b814001bf66d1f2b8191f1a"
+    const recipiesURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=e720edf96b814001bf66d1f2b8191f1a&sort=random"
 
     fetch(recipiesURL)
     .then(function(response) {
@@ -62,16 +62,15 @@ cuisineSubmitBtn.addEventListener("click", function() {
         
     })
     searchBox.value = ""
-    dropDown.value = "default"
+    dropDown.value = ""
 })
 
 
 getAllRecipies(function(recipies) {
-    console.log(recipies)
+  console.log(recipies)
     displayRecipes(recipies)
     
 })
 
-document.querySelector(".navbar-toggler").addEventListener("click", function(e){ 
-    document.querySelector("#SpartanNavbar").classList.toggle("show"); }); 
+
 

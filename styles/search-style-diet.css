@@ -55,9 +55,11 @@ li {
    
 }
 #iconBtnsDiv{
-    display: flex;
+    
 }
-
+label {
+    display: none;
+}
 .icons{
     padding-left: 30px;
     padding-right: 30px;
@@ -71,4 +73,15 @@ li {
     border:darkgoldenrod; 
     border-style:groove ;
     border-width: 5px;
+}
+
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse
+     {
+    display: flex!important;
+    justify-content: space-around;
+    flex-basis: auto;
+
+}
+
 }
