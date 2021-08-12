@@ -1,10 +1,24 @@
-
+/* Styling for div containing the map section*/
+#mapSection{
+    background-color: black;
+    width: 100%;
+    border: solid goldenrod 3px;
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mapTitle{
+    color: white;
+}
 /* Define the size of the div element containing the map */
 #mapContainer {
     height: 500px;
-    width: 750px;
+    width: 80%;
     background-color: grey;
     border: inset goldenrod 3px;
+    margin-bottom: 30px;
 }
 
 #map {
@@ -16,7 +30,7 @@
         height: 494px;
         width: null;
         background-color: black;
-        position: fixed;
+        position: absolute;
         z-index: 1;
         overflow-x: hidden;
         transition: all .2s ease-out;
@@ -25,7 +39,7 @@
     }
 
     .open {
-        width: 250px;
+        width: 20%;
     }
 
 /* Styling for place details */
@@ -50,4 +64,8 @@ p {
 .webUrl {
     text-decoration: none;
     color: goldenrod;
+}
+
+#markerInfo {
+    color: black !important;
 }
