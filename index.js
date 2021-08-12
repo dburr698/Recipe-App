@@ -5,6 +5,8 @@ const randomRecipeDiv = document.getElementById("randomRecipeDiv")
 const randomRecipeDivDisplay = document.getElementById("randomRecipeDivDisplay")
 const randomRecipeUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=5023bb61e64c4b21bfee5eefe6f596f1&query=&number=1&sort=random'
 const searchBox = document.getElementById("searchBox")
+const searchBtn = document.getElementById("searchBtn")
+
 
 function getPopularRecipe(popularRecipeDownloaded) {
     fetch(recipeURL)
@@ -27,7 +29,7 @@ function getRandomRecipe() {
 function getSearchedRecipes(resultsDownloaded) { 
     const search = `query=${searchBox.value}`
 
-    const searchURL =`https://api.spoonacular.com/recipes/complexSearch?apiKey=e720edf96b814001bf66d1f2b8191f1a&${search}&number=25&sort=random`
+    const searchURL =`https://api.spoonacular.com/recipes/complexSearch?apiKey=5023bb61e64c4b21bfee5eefe6f596f1&${search}&number=25&sort=random`
 
     console.log(searchURL)
     fetch(searchURL)
@@ -39,18 +41,33 @@ function getSearchedRecipes(resultsDownloaded) {
         console.log(error)
     })
 
+    
 }
 
 function displayRecipes(recipesToDisplay) {
     
     const recipeItems = recipesToDisplay.results.map(function(recipe) {
         return `<li onClick= routeToRecipePage(${recipe.id})>
-                    <img id = "recipeImage" src="${recipe.image}"/>
-                    <h3>${recipe.title}</h3>
+                    <img id = "recipeImages" src="${recipe.image}"/>
+                    <h3 id="recipeTitle" >${recipe.title}</h3>
                 </li>`
     }) 
     recipesUl.innerHTML = recipeItems.join("")
 }
+
+searchBtn.addEventListener("click", function(event){
+    event.preventDefault()
+    getSearchedRecipes(function(recipeInfo){
+        console.log(recipeInfo)
+        displayRecipes(recipeInfo) 
+        
+    })
+
+    searchBox.value = ""
+    
+})
+    
+
 
 
 function routeToRecipePage(recipeId) {
