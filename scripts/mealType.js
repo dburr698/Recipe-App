@@ -55,7 +55,7 @@ searchButton.addEventListener('click', function () {
     })
 
     searchTextBox.value = ""
-    mealTypeSelect.value = "default"
+    mealTypeSelect.value = ""
 
 })
 

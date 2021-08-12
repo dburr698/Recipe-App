@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +20,11 @@
         <nav class="navbar navbar-dark bg-dark">
             <form class="d-flex">
                 <label for="dishIngredientSearch">Search recipes</label>
-                <input type="text" id="search" placeholder="Enter ingredients">
+                <input type="text" id="search" pattern="[A-Za-Z]" placeholder="Enter ingredients">
             </form>
 
-
-
-            <select name="cuisineType" id="cuisineType">
-                <option value="default" selected disabled hidden>Cuisine Type</option>
+            <select name="cuisineType" id="cuisineType" required>
+                <option value="" selected disabled hidden>Cuisine Type</option>
                 <option value="carribean">Caribbean</option>
                 <option value="chinese">Chinese</option>
                 <option value="french">French</option>
@@ -40,8 +38,10 @@
             <button id="cuisineSubmitBtn">Submit</button>
             <div id="iconBtnsDiv">
                 <a id="mealsLink" href="mealType.html"><img class="icons" src="images/BW Icons wtext/4.png" alt=""></a>
-                <a id="cuisinesLink" href="cuisine.html"><img class="icons" src="images/BW Icons wtext/3.png" alt=""></a>
-                <a id="dietsLink" href="diets.html"><img class="icons" src="images/BW Icons wtext/BW Icons wtext.png" alt=""></a>
+                <a id="cuisinesLink" href="cuisine.html"><img class="icons" src="images/BW Icons wtext/3.png"
+                        alt=""></a>
+                <a id="dietsLink" href="diets.html"><img class="icons" src="images/BW Icons wtext/BW Icons wtext.png"
+                        alt=""></a>
                 <a id="popularDishesLink" href=""><img class="icons" src="images/BW Icons wtext/1.png" alt=""></a>
             </div>
         </nav>
@@ -50,7 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-    <script src="/scripts/cuisine.js"></script>
+    <script src="scripts/cuisine.js"></script>
 
 
 
