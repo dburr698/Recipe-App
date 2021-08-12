@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/localStores.css">
   <title>Recipe-App Home</title>
 </head>
 
@@ -24,7 +25,8 @@
       </form>
       <div id="iconBtnsDiv">
         <a id="mealsLink" href="./mealType.html"><img class="icons" src="./images/BW%20Icons%20wtext/4.png" alt=""></a>
-        <a id="cuisinesLink" href="./cuisine.html"><img class="icons" src="./images/BW%20Icons%20wtext/3.png" alt=""></a>
+        <a id="cuisinesLink" href="./cuisine.html"><img class="icons" src="./images/BW%20Icons%20wtext/3.png"
+            alt=""></a>
         <a id="dietsLink" href="./diets.html"><img class="icons" src="./images/2.png" alt=""></a>
         <a id="popularDishesLink" href=""><img class="icons" src="./images/BW%20Icons%20wtext/1.png" alt=""></a>
       </div>
@@ -73,11 +75,29 @@
     </div>
   </div>
 
+  <div id="mapSection">
+    <h1 class="mapTitle">Find Grocery Stores Near You</h1>
+    <div id="mapContainer">
+      <!-- The slide-out panel for showing place details-->
+      <div id="panel">
 
+      </div>
+
+      <!-- Map shows up here -->
+      <div id="map">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/localStores.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzj_emifj83X86ZLWHqNA870JifW_sSHk&libraries=places&callback=initMap"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <script src="index.js"></script>
+
 </body>
 
 </html>
