@@ -123,7 +123,7 @@ function createMarkers(places) {
 function showDetails(placeResult, marker, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         let placeInfowindow = new google.maps.InfoWindow()
-        placeInfowindow.setContent(`<div><strong>${placeResult.name}</strong><br>Rating: ${placeResult.rating}</div>`)
+        placeInfowindow.setContent(`<div id="markerInfo"><strong>${placeResult.name}</strong><br>Rating: ${placeResult.rating}</div>`)
         placeInfowindow.open(marker.map, marker)
         currentInfoWindow.close()
         currentInfoWindow = placeInfowindow

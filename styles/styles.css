@@ -98,6 +98,43 @@ h1{
 }
 
 
+li {
+    list-style: none;
+    border-bottom: black;
+    border-bottom: solid;
+    padding: 20px;
+    font-family: monospace;
+    font-size: larger;
+    text-align: center;
+   
+}
+
+#recipeImages {
+    height: 45%;
+    width: 45%;
+    border:darkgoldenrod; 
+    border-style:groove ;
+    border-width: 5px;
+}
+
+#recipeUl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+    margin: auto; 
+}
+
+@media only screen and (max-width: 500px) {
+    label {
+        display:block;
+        cursor: pointer;
+    }
+    #toggle:checked +  {
+
+    }
+}
+
 
 
 
