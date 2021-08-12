@@ -44,7 +44,9 @@ h3 {
     width: 150px;
 
 }
-
+label {
+    display: none;
+}
 li {
     list-style: none;
     border-bottom: black;
@@ -55,7 +57,7 @@ li {
    
 }
 #iconBtnsDiv{
-    display: flex;
+    
 }
 
 .icons{
@@ -71,4 +73,15 @@ li {
     border:darkgoldenrod; 
     border-style:groove ;
     border-width: 5px;
+}
+
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse
+     {
+    display: flex!important;
+    justify-content: space-around;
+    flex-basis: auto;
+
+}
+
 }
