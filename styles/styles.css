@@ -3,16 +3,13 @@ body{
     flex-direction: column;
 
 }
-
 #logoImgLink{
     margin: auto;
 }
-
 #search_row{
     display: flex;
     border: solid goldenrod 3px;
 }
-
 #logoImg{
     padding: 15px;
     height: 250px;
@@ -20,17 +17,15 @@ body{
     align-items: center;
     margin: auto;
 }
-
 .d-flex{
     margin-right: 2px;
 
 }
 
-.navbar {
+/* .navbar {
 width: -webkit-fill-available;
 padding-left: 5px;
-}
-
+} */
 #carouselDiv{
     display: flex;
     text-align: center;
@@ -61,8 +56,12 @@ padding-left: 5px;
 }
 
 #iconBtnsDiv{
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; */
 }
+
 
 .icons{
     padding-left: 30px;
@@ -108,7 +107,13 @@ li {
     text-align: center;
    
 }
-
+#searchbtn {
+    display: flex;
+    border: solid goldenrod 3px;
+    width: 250px px;
+    background-color: goldenrod;
+    
+}
 #recipeImages {
     height: 45%;
     width: 45%;
@@ -125,7 +130,7 @@ li {
     margin: auto; 
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     label {
         display:block;
         cursor: pointer;
@@ -133,8 +138,18 @@ li {
     #toggle:checked +  {
 
     }
+} */
+
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse
+     {
+    display: flex!important;
+    justify-content: space-around;
+    flex-basis: auto;
+
 }
 
+}
 
 
 

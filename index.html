@@ -15,26 +15,30 @@
 
 <body>
 
-  <a id="logoImgLink" href="./index.html"><img id="logoImg" src="./images/ReciPedia.png" alt=""></a>
+  <a id="logoImgLink" href="./index.html"><img id="logoImg" class="image-fluid" src="./images/ReciPedia.png" alt=""></a>
 
-  <div id="search_row">
-    <nav class="navbar navbar-dark bg-dark">
-      <form class="d-flex">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <input id="searchBox" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <a href="#recipesUl"><button id="searchBtn" class="btn btn-outline-success" type="submit">Search</button></a>
-
-      </form>
-      <div id="iconBtnsDiv">
-        <a id="mealsLink" href="./mealType.html"><img class="icons" src="./images/BW%20Icons%20wtext/4.png" alt=""></a>
-        <a id="cuisinesLink" href="./cuisine.html"><img class="icons" src="./images/BW%20Icons%20wtext/3.png"
-            alt=""></a>
-        <a id="dietsLink" href="./diets.html"><img class="icons" src="./images/2.png" alt=""></a>
-        <a id="popularDishesLink" href="./PopularDishes.html"><img class="icons" src="./images/BW%20Icons%20wtext/1.png" alt=""></a>
+        <div id="iconBtnsDiv">
+          <a id="mealsLink" href="mealType.html"><img class="icons" src="images/BW Icons wtext/4.png" alt=""></a>
+          <a id="cuisinesLink" href="cuisine.html"><img class="icons" src="images/BW Icons wtext/3.png" alt=""></a>
+          <a id="dietsLink" href="diets.html"><img class="icons" src="images/BW Icons wtext/BW Icons wtext.png"alt=""></a>
+          <a id="popularDishesLink" href="./PopularDishes.html"><img class="icons" src="images/BW Icons wtext/1.png" alt=""></a>
+        </div>
+        <form class="d-flex">
+          <input type="text" id="search" pattern="[A-Za-Z]" placeholder="Enter ingredients">
+          <button id = "searchbtn">Search Recipes:</button>
+        </form>
       </div>
-    </nav>
-  </div>
-
+      </div>
+  </nav>
   <ul id="recipesUl">
 
   </ul>
@@ -99,7 +103,10 @@
   <script src="scripts/localStores.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzj_emifj83X86ZLWHqNA870JifW_sSHk&libraries=places&callback=initMap"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <script src="index.js"></script>
