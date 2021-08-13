@@ -41,6 +41,8 @@ Built with Bootstrap, HTML, CSS, and Javascript.
 ##Created by:
 --------
 
+David Burrell, Janelle Shines, Jen Ine, Jennie DeYoung, Kharharee Lane
+
 
 
 
