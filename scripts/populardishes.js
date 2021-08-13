@@ -4,7 +4,8 @@ const dishTypeSelect = document.getElementById("dishTypeSelect")
 
 
 function getPopularRecipes(showDishes) {
-    const mealsUrl = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=837cf79576fa443db6126e8ce01e0c58&query=&number=3&sort=popularity'
+    const search = `query=${searchBox.value}`
+    const mealsUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=837cf79576fa443db6126e8ce01e0c58&${search}=&number=50&sort=popularity`
     fetch(mealsUrl)
         .then(response => {
             return response.json()
