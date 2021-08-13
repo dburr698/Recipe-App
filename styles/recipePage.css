@@ -62,6 +62,7 @@
     font-size: 1.4em;
     width: 80%;
     margin-bottom: 60px;
+    border-bottom: 0 ; 
     
 }
 
@@ -69,7 +70,8 @@
 
     font-size: 1.25em;
     font-weight: 400;
-    list-style-type: circle;
+    list-style-type: circle ;
+    border-bottom: 0 ;
 }
 
 #directions {
