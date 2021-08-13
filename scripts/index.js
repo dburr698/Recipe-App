@@ -78,7 +78,7 @@ function displayPopRecipeImage(popularRecipeDownloaded){
     console.log(popularRecipeDownloaded)
 
    
-    const recipeImages = popularRecipeDownloaded.results.map(function(recipeImage, index){
+    const recipeImages = popularRecipeDownloaded.map(function(recipeImage, index){
         return `<div onClick= routeToRecipePage(${recipeImage.id}) class="carousel-item ${index == 0 ? "active": ""}">           
 
                 <img src = "${recipeImage.image}" />
