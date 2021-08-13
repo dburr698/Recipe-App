@@ -4,7 +4,7 @@ const id = urlParams.get("id")
 console.log(id)
 const divContainer = document.getElementById("recipeContainer")
 
-const apiKey = "843765ca722c4b6fa53b40182c0bc5db"
+const apiKey = "e720edf96b814001bf66d1f2b8191f1a"
 
 function getRecipe(recipesDownloaded) {
     const recipeURL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
@@ -79,50 +79,3 @@ getRecipe(function (info) {
 })
 
 
-//----------------homepage js--------------
-
-const recipeURL = 'https://api.spoonacular.com/recipes/complexSearch?apiKey=9378714895904dd88157b062a0cff48a&query=&number=3&sort=popularity'
-const carouselDiv = document.getElementById("carouselDiv")
-const randomRecipeBtn = document.getElementById("randomRecipeBtn")
-
-function getPopularRecipe(popularRecipeDownloaded) {
-    fetch(recipeURL)
-        .then(response => { return response.json() })
-        .then(recipes => {
-            popularRecipeDownloaded(recipes)
-        })
-}
-
-function displayPopRecipeImage(popularRecipeDownloaded) {
-    console.log(popularRecipeDownloaded)
-
-    const recipeImages = popularRecipeDownloaded.map(function (recipeImage, index) {
-        return `<div class="carousel-item ${index == 0 ? "active" : ""}">           
-                <img src = "${recipeImage.image}" />
-                </div>
-       `
-    })
-
-
-    function displayRandomRecipeImage(popularRecipeDownloaded) {
-        console.log(popularRecipeDownloaded)
-
-        const recipeImages = popularRecipeDownloaded.map(function (recipeImage) {
-            return `<div id="randomRecipe">
-        <a href=""><h3>${recipeImage.title}</h3></a>
-        <a href=""><img src="${recipeImage.image}" alt=""></a>
-      </div>`
-        })
-    }
-
-    carouselDiv.innerHTML = recipeImages.join("")
-}
-
-getPopularRecipe(function (recipes) {
-    displayPopRecipeImage(recipes.results)
-})
-
-
-randomRecipeBtn.addEventListener(click, function () {
-    getPopularRecipe(recipes)
-})
